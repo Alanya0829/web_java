@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Página principal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body class="p-0">
+            <header class="bg-body-tertiary ">
+                <nav class="navbar navbar-expand-md bg-body-tertiary container-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand d-inline m-0 p-0" href="./index.html">
+                            <img src="./img/logo.png" style="width:6rem">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglePrincipal" aria-controls="navbarTogglePrincipal" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglePrincipal">
+                            <form class="d-flex flex-grow-1 p-lg-5 p-md-0 p-ms-0" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar Productos"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-secondary" type="submit"> <i class="fas fa-search"></i></button>
+                            </form>
+                            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="productos.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight">
+                                        <i class="fa fa-cart-shopping"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <!--
+                                    <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+                                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                                    -->
+                                    <div class="dropdown text-end">
+                                        <a href="#" class="d-block link-secondary text-decoration-none dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa-solid fa-user"></i>
+                                        </a>
+                                        <ul class="dropdown-menu text-small">
+                                            <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
+                                            <li><a class="dropdown-item" href="#">Pedidos</a></li>
+                                            <li><a class="dropdown-item" href="#">Cupones</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+        
+                            </ul>
+        
+                        </div>
+                    </div>
+        
+                </nav>
+            </header>
+        
+            <!--fin del header-->
+        
+            <!--Carrito de compra-->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    ...
+                </div>
+            </div>
+
+        <main>
+            <section class="mt-5">
+                <div class="container">
+                    <div id="myCorousel" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#myCorousel" data-bs-slide-to="0" class="active"></li>
+                            <li data-target="#myCorousel" data-bs-slide-to="1"></li>
+                            <li data-target="#myCorousel" data-bs-slide-to="2"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <article class="card" style="width: 100%; height: 35rem; background: url(img/banner1.png);">
+                                </article>
+                            </div>
+                            <div class="carousel-item">
+                                <article class="card" style="width: 100%; height: 35rem; background: url(img/banner2.png);">
+                                </article>
+                            </div>
+                            <div class="carousel-item">
+                                <article class="card" style="width: 100%; height: 35rem; background: url(img/banner3.png);">
+                                </article>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#myCorousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCorousel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="mb-lg-4 mt-lg-5 my-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mb-6">
+                            <h3 class="mb-0">Conoce nuestras categorías</h3>
+                        </div>
+                        <div class="col-12 mb-6">
+                            <div class="row" style="opacity: 1;">
+                                <div class="col-3" style="width: 165px;">
+                                    <div class="card card-product mb-lg-4" style="height: 220px;">
+                                        <div class="card-body text-center py-8">
+                                            <img src="img/terno1.jpg" alt="turno1" class="mb-3">
+                                            <a href="#!" class="btn btn-outline-dark">Dos o Tres</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3" style="width: 165px;">
+                                    <div class="card card-product mb-lg-4" style="height: 220px;">
+                                        <div class="card-body text-center py-8">
+                                            <img src="img/terno2.jpg" alt="turno2" class="mb-3">
+
+                                            <a href="#!" class="btn btn-outline-dark">Dinner Jacket</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3" style="width: 165px;">
+                                    <div class="card card-product mb-lg-4" style="height: 220px;">
+                                        <div class="card-body text-center py-8">
+                                            <img src="img/terno3.jpg" alt="turno3" class="mb-3">
+                                            <a href="#!" class="btn btn-outline-dark">Traje de Cuello</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3" style="width: 165px;">
+                                    <div class="card card-product mb-lg-4" style="height: 220px;">
+                                        <div class="card-body text-center py-8">
+                                            <img src="img/terno4.jpg" alt="terno4" class="mb-3">
+                                            <a href="#!" class="btn btn-outline-dark">Adicionales</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section> -->
+            <section class="container-fluid">
+                <div class="container">
+                    <div class="row">
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="my-lg-5 my-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="mb-8 mb-xl-0">
+                                <div class="mb-3">
+                                    <img src="img/clock.svg" width="40" height="40" alt="">
+                                </div>
+                                <h3 class="h5 mb-6">
+                                    Realizamos sus pedidos rapidamente
+                                </h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione non, in exercitationem
+                                    alias nam excepturi unde numquam eius voluptatem.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6  col-lg-3">
+                            <div class="mb-8 mb-xl-0">
+                                <div class="mb-3">
+                                    <img src="img/cash-coin.svg " width="40" height="40" alt="">
+                                </div>
+                                <h3 class="h5 mb-6">Mejores precios y ofertas</h3>
+                                <p>
+                                    Con un producto de calidad y a precio bajo, aprovecha nuestros diferentes ofertas.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="mb-8 mb-xl-0">
+                                <div class="mb-3">
+                                    <img src="img/bag-check.svg" width="40" height="40" alt="">
+                                </div>
+                                <h3 class="h5 mb-6">Calidad de producto</h3>
+                                <p>Contamos con gran variedad de productos con una calidad de excelencia.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="mb-8 mb-xl-0">
+                                <div class="mb-3">
+                                    <img src="img/chat-right-heart.svg" width="40" height="40" alt="">
+                                </div>
+                                <h3 class="h5 mb-6">Escuchamos tus opiniones</h3>
+                                <p>Nuestra tienda siempre esta en constante cambio e innovación, así que no dudes en
+                                    comentarnos tus experiencias.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="border-top py-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <span class="small text-muted">Copyright 2023 © Todos los derechos reservados.</span>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-inline text-md-end mb-0 small mt-3 mt-md-0 text-right py-8">
+                                <li class="list-inline-item text-muted">Siguenos</li>
+                                <li class="list-inline-item me-1">
+                                    <a href="#!" class="btn btn-xs btn-social btn-icon">
+                                        <image src="img/facebook.svg" width="16" height="16">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item me-1">
+                                    <a href="#!" class="btn btn-xs btn-social btn-icon">
+                                        <image src="img/instagram.svg" width="16" height="16">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#!" class="btn btn-xs btn-social btn-icon">
+                                        <image src="img/twitter.svg" width="16" height="16">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+
+        <!-- Reemplaza "3d7ac59f70" con tu clave de FontAwesome -->
+        <script src="https://kit.fontawesome.com/3d7ac59f70.js" crossorigin="anonymous"></script>
+    </body>
+
+</html>
